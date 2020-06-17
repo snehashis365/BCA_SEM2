@@ -38,13 +38,13 @@ void main(){
                 }
                 else if (front->nextNode==front)
                 {
-                    printf("deleted: %d\n",front->data);
+                    printf("Deleted: %d\n",front->data);
                     front=NULL;
                     rear=NULL;
                 }
                 else
                 {
-                    printf("deleted: %d\n",front->data);
+                    printf("Deleted: %d\n",front->data);
                     front=front->nextNode;
                     rear->nextNode=front;
                 }
