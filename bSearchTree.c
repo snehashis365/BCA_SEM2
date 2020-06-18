@@ -13,7 +13,6 @@ void addNode(int value)
     p = root;
     if(p==NULL)
     {
-        printf("\nNode Null\n");
         newNode = (node*)malloc(sizeof(node*));
         newNode->data=value;
         newNode->left=NULL;
