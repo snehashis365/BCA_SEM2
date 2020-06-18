@@ -130,14 +130,13 @@ void deleteNode()
 
         case 3:
             p = top;
-            p2 = p->nextNode;
-            while (p2->nextNode != NULL){
+            //p2 = p->nextNode;
+            while (p->nextNode->nextNode != NULL){
                 p = p->nextNode;
-                p2 = p->nextNode;
             }
+            value = p->nextNode->data;
+            free(p->nextNode);//deallocating the unused memory location
             p->nextNode = NULL;
-            value = p2->data;
-            free(p2);//deallocating the unused memory location
             break;
         default:
             printf("\nWrong choice\n");
