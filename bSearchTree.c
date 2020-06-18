@@ -35,26 +35,18 @@ void addNode(int value)
             }
             else if (p->data > value)
             {
-                printf("\nGo left\n");
-                if(p->left != NULL){
+                if(p->left != NULL)
                     p=p->left;
-                }
                 else
-                {
-                    flag = 1;   
-                }
+                    flag = 1;
                 
             }
             else
             {
-                printf("\nGo Right\n");
-                if(p->right != NULL){
+                if(p->right != NULL)
                     p=p->right;
-                }
                 else
-                {
                     flag = 2;
-                }
                 
             }
             if(flag)
