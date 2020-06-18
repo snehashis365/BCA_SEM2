@@ -130,7 +130,6 @@ void deleteNode()
 
         case 3:
             p = top;
-            //p2 = p->nextNode;
             while (p->nextNode->nextNode != NULL){
                 p = p->nextNode;
             }

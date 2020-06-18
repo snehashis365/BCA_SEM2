@@ -8,7 +8,6 @@ typedef struct node
 node *newNode,*p,*p2,*top=NULL;
 int listSize()
 {
-   // printf("\nCounting....");
     int count=0;
     node *point = top;
     if(top!=NULL)
@@ -19,7 +18,6 @@ int listSize()
             point = point->nextNode;
         }while (point!=top);
     }
-   // printf("Done\n");
     return count; 
 }
 void createNode(int value)
@@ -167,7 +165,6 @@ void deleteNode()
         case 3:
         DelEnd:
             p = top;
-            //p2 = p->nextNode;
             while (p->nextNode->nextNode != top){
                 p = p->nextNode;
             }
@@ -197,9 +194,6 @@ void main()
 
     int ch,sCh,value,pos,i;
     do{
-       // printf("\nIn Loop....\n");
-       // if(top==NULL)
-        //    printf("\nTop NULL\n");
         if(listSize()==0)
         {
             printf("\nPress 1 to create new node\nPress 9 to exit\n\nEnter choice: ");
@@ -227,8 +221,7 @@ void main()
         
         default:
             break;
-        }
-        //printf("\nOutside loop...\n");       
+        } 
     }while (ch!=9); 
     printf("\nExiting...\n");
 }
