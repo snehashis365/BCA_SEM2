@@ -3,8 +3,7 @@ typedef struct node
 {
     int data;
     struct node *left;
-    struct node *right;    
-
+    struct node *right;
 }node;
 node *root=NULL,*newNode,*p;
 void addNode(int value)
@@ -23,7 +22,7 @@ void addNode(int value)
         count++;
     }
     else
-    {   
+    {
         int flag = 0;
         while(1)
         {
@@ -38,7 +37,7 @@ void addNode(int value)
                     p=p->left;
                 else
                     flag = 1;
-                
+
             }
             else
             {
@@ -46,7 +45,7 @@ void addNode(int value)
                     p=p->right;
                 else
                     flag = 2;
-                
+
             }
             if(flag)
             {
@@ -59,7 +58,7 @@ void addNode(int value)
                 case 1:
                     p->left=newNode;
                     break;
-                
+
                 case 2:
                     p->right=newNode;
                     break;
@@ -68,7 +67,7 @@ void addNode(int value)
             }
         }
     }
-          
+
 }
 void display(node *root)
 {
@@ -79,12 +78,26 @@ void display(node *root)
         display(root->right);
     }
 }
+
+void inDisplay(node *root)//Display tree in In-order fashion
+{
+  if(root->left!=NULL)
+  {
+    inDisplay(root->left);
+  }
+  printf("%d ",root->data);
+  if(root->right!=NULL)
+  {
+    inDisplay(root->right);
+  }
+}
+
 void main()
 {
     int ch,val;
     do
     {
-        printf("\n1. Add new data to tree\n2. Display tree data in Pre-order\n3. Exit\n\nEnter Choice: ");
+        printf("\n1. Add new data to tree\n2. Display tree data in Pre-order\n3. Display tree data in In-order\n9. Exit\n\nEnter Choice: ");
         scanf("%d",&ch);
         switch (ch)
         {
@@ -93,18 +106,22 @@ void main()
             scanf("%d",&val);
             addNode(val);
             break;
-        
+
         case 2:
-            printf("\nDisplaying....\n");
+            printf("\nDisplaying....Pre-order\n");
             display(root);
             break;
-        
+
         case 3:
+            printf("\nDisplaying....In-order\n");
+            inDisplay(root);
+            break;
+        case 9:
             break;
         default:
             printf("Wrong Choice\n");
             break;
         }
-    } while (ch!=3);
+    } while (ch!=9);
     printf("\nExiting...\n");
 }
