@@ -5,6 +5,7 @@ typedef struct node
     struct node *left;
     struct node *right;
 }node;
+
 node *root=NULL,*newNode,*p;
 void addNode(int value)
 {
@@ -69,27 +70,32 @@ void addNode(int value)
     }
 
 }
-void display(node *root)
+void preDisplay(node *root)//Display tree in Pre-order fashion
 {
     if(root!=NULL)
     {
         printf("%d ",root->data);
-        display(root->left);
-        display(root->right);
+        preDisplay(root->left);
+        preDisplay(root->right);
     }
 }
 
 void inDisplay(node *root)//Display tree in In-order fashion
 {
-  if(root->left!=NULL)
-  {
-    inDisplay(root->left);
-  }
-  printf("%d ",root->data);
-  if(root->right!=NULL)
-  {
-    inDisplay(root->right);
-  }
+    if(root->left!=NULL)
+        inDisplay(root->left);
+    printf("%d ",root->data);
+    if(root->right!=NULL)
+        inDisplay(root->right);
+}
+
+void postDisplay(node *root)//Display tree in Post-order fashion
+{
+    if(root->left!=NULL)
+        postDisplay(root->left);
+    if(root->right!=NULL)
+        postDisplay(root->right);
+    printf("%d ",root->data);
 }
 
 void main()
@@ -97,7 +103,7 @@ void main()
     int ch,val;
     do
     {
-        printf("\n1. Add new data to tree\n2. Display tree data in Pre-order\n3. Display tree data in In-order\n9. Exit\n\nEnter Choice: ");
+        printf("\n1. Add new data to tree\n2. Display tree data in Pre-order\n3. Display tree data in In-order\n4. Display tree in Post-order\n9. Exit\n\nEnter Choice: ");
         scanf("%d",&ch);
         switch (ch)
         {
@@ -108,13 +114,20 @@ void main()
             break;
 
         case 2:
-            printf("\nDisplaying....Pre-order\n");
-            display(root);
+            printf("\nDisplaying....Pre-order\n\n");
+            preDisplay(root);
+            printf("\n");
             break;
 
         case 3:
-            printf("\nDisplaying....In-order\n");
+            printf("\nDisplaying....In-order\n\n");
             inDisplay(root);
+            printf("\n");
+            break;
+        case 4:
+            printf("\nDisplaying....Post-order\n\n");
+            postDisplay(root);
+            printf("\n");
             break;
         case 9:
             break;
@@ -123,5 +136,5 @@ void main()
             break;
         }
     } while (ch!=9);
-    printf("\nExiting...\n");
+    printf("\nExiting...\n\n");
 }
