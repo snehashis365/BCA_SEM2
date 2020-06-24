@@ -1,4 +1,10 @@
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/snehashis365/BCA_SEM2/graphs/commit-activity)
+[![GitHub issues](https://img.shields.io/github/issues/snehashis365/BCA_SEM2)](https://github.com/snehashis365/BCA_SEM2/issues)
+[![GitHub forks](https://img.shields.io/github/forks/snehashis365/BCA_SEM2?style=social)](https://github.com/snehashis365/BCA_SEM2/network) 
+[![GitHub stars](https://img.shields.io/github/stars/snehashis365/BCA_SEM2?style=social)](https://github.com/snehashis365/BCA_SEM2/stargazers) 
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 # BCA_SEM2
+
 A  collection of programs we did in the 2nd Sem while stuck at home in Quarantine XD yeah 2020 it is.
 
 ## I forked this repo what to do now?
