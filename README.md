@@ -1,13 +1,13 @@
 # BCA_SEM2
 A  collection of programs we did in the 2nd Sem while stuck at home in Quarantine XD yeah 2020 it is.
 
-##I forked this repo what to do now?
+## I forked this repo what to do now?
 So you are done with getting used to GitHub and want to **contribute** for real now. But where to begin? Well that's where I come in.
 
 I will assgin tasks *below* and you have to finish them.
 
 - Quick Recap
-  - Add you name to CONTRIBUTORS.md
+  - Add you name to [Contributors.md](Contributors.md)
 - Classify the program types
   - Inspect the .c files
   - Determine what type it is (Like **Basic** (*Sub divide* into Calculatons, Conditional, Loop, Menu Driven), **Pointers**,Structure, Data Structures(Sub divide into Stacks, Queues, LinkLists, Trees,etc)
