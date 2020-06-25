@@ -4,8 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/snehashis365/BCA_SEM2?style=social)](https://github.com/snehashis365/BCA_SEM2/stargazers) 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 # BCA_SEM2
-
-A  collection of programs we did in the 2nd Sem while stuck at home in Quarantine XD yeah 2020 it is.
+A  collection of programs we did in the 2nd Sem while stuck at home in Quarantine :joy: yeah 2020 it is.
 
 ## I forked this repo what to do now?
 So you are done with getting used to GitHub and want to **contribute** for real now. But where to begin? Well that's where I come in.
