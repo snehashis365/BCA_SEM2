@@ -26,7 +26,16 @@ I will assgin tasks *below* and you have to finish them.
 - You can improve or add features to existing finished programs. (Please mention that in commit message if the changes are appropiate they will be merged to the upstream
 - <*More Tasks Coming Soon*>
 
+## Note (For Contributors only others follow the forking approach)
+Please create your **respective branches**(name them with your username unless it's a real mumbo jumbo to spell)
+Make changes there and **create pull requests regularly**.
+The above **rule of initiating new files apply to you as well** you just doing it on the **main repo in a different branch instead on your forked repo**
+Make sure to **create pull request of your branch to your forked repo** to keep it updated.(Contact us to if you get confused)
+It's **not necessary to inform** us every time you create a pull request **but** please do so for the 1st few weeks.
 
-#### Thank You Everyone for supporting us in this initiative!! :sparkling_heart:
+**This is solely for your practice of both coding and using GitHub**
+
+
+### Thank You Everyone for supporting us in this initiative!! :sparkling_heart:
 
 #### Speical Thanks to [Hasibul](https://github.com/starhasibul) for jointly starting this initiative with me.
